@@ -1,0 +1,16 @@
+---
+title: Example Pages
+date: 2012-01-02 12:00:00 -08:00
+...
+
+<h1 class="section">Pages</h1>
+
+<ul id="post_list" class="activity">
+  {% for post in site.categories.pages - [self] %}
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h3 class="date">created {{ post.date.datetime }}</h3>
+    {% if page.config["excerpt"] %} <p>{{ markdown page.excerpt }}</p> {% end %}
+  </li>
+  {% end %}
+</ul>

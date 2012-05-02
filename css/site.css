@@ -1,0 +1,95 @@
+pre, code {
+    font-family: Monaco, Courier, monospace;
+}
+
+div.container {
+    margin: 0 1em;
+}
+
+div.post {
+    margin: 0 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#header ul li {
+    display: inline;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding: 0 0 0 4px;
+}
+
+#header ul li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+h1.section {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-bottom: 0.5em;
+}
+
+h1.title {
+    xfont-size: 2.5em;
+}
+
+h3.date {
+    font-size: 1.1em;
+}
+
+a.readmore {
+    display: block;
+    text-align: right;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+div.post h2 {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    margin-top: 0.7em;
+}
+
+ul.activity li {
+    position: relative;
+}
+
+ul.activity li h2 {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+ul.activity li h3.date {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+ul.activity li p {
+    margin-top: 0;
+    margin-right: 7em;
+}
+
+ul#recent_posts li {
+    margin-top: 1em;
+}
+
+ul#recent_activity li a {
+    font-family: monospace;
+}
+
+ul#recent_activity li p {
+    margin-top: 0;
+    margin-bottom: 0;
+}

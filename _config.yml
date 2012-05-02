@@ -1,0 +1,15 @@
+domain: http://www.example.com
+author: John Doe
+email: john.doe@example.com
+disqus_shortname: examplecom
+date_fmt: %Y/%m
+google_ua: UA-123456-7
+
+subtitle: example.com
+
+exclude:
+- Rakefile
+- tmp
+
+# shortcuts
+email_me: "[email me](mailto:john.doe@example.com)"

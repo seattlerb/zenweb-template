@@ -1,0 +1,19 @@
+---
+title: Example Homepage
+layout: page
+...
+
+{% pages  = all_subpages.select(&:dated_path?) %}
+{% latest = pages.shift %}
+
+## {{ latest.link_html }}
+
+### {{ latest.date.datetime }}
+
+{{ latest.subrender }}
+
+{{ latest.link_html "read more &raquo;" }}
+
+## Blog Archive
+
+{{ sitemap site.categories.blog }}

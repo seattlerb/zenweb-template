@@ -1,0 +1,68 @@
+---
+
+...
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %} {{ page.title }} | {% end %} {{ page.subtitle }}
+    </title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <link href="{{ domain }}/atom.xml" rel="alternate" title="{{ page.title }}" type="application/atom+xml" />
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/skeleton.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/site.css">
+
+    {% if page.config["syntax"] then %}
+    <link rel="stylesheet" href="/css/syntax.css">
+    {% end %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="/js/jquery-1.7.1.min.js"></script>
+
+    <style>
+      div#header { margin-top: 1em;}
+      #header .omega {text-align: right;}
+    </style>
+  </head>
+  <body>
+    <div id="header" class="container container-twelve">
+      <div class="twelve columns" id="grid">
+	<div class="eight columns alpha">
+	  <h1 class="remove-bottom">{{ page.link_html page.title }}</h1>
+	  <h5>{{ page.subtitle }}</h5>
+        </div>
+	<div class="four columns omega" style="align: bottom">
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li><a href="/pages">pages</a></li>
+            <li><a href="/projects">projects</a></li>
+          </ul>
+        </div>
+        <hr/>
+      </div>
+    </div>
+
+    <div class="container container-twelve">
+
+      {{ content }}
+
+    </div>
+
+    <script src="/js/tabs.js"></script>
+    {{ include "analytics.html.erb", page }}
+  </body>
+</html>
