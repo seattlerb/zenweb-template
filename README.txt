@@ -5,19 +5,22 @@ rdoc :: http://docs.seattlerb.org/zenweb-template
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Simply provides an example zenweb template website.
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Demonstrates both static and dynamic pages.
+* Demonstrates both regular pages and blog posts.
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+  gem unpack zenweb-template
+  cd zenweb-template-1.0.0.b1/website
+  rake
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* Uses isolate but doesn't require it at all.
 
 == INSTALL:
 
