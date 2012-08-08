@@ -1,14 +1,12 @@
 #!/usr/bin/env rake
 
+HTML_DIR="/Library/WebServer/Documents"
+
 require "rubygems"
 
 load ".isolate.rb"
 
-zenweblib = File.expand_path("~/Work/p4/zss/src/ZenWeb/dev/lib")
-
-$: << zenweblib
-
-Rake.application.options.rakelib << File.join(zenweblib, "zenweb")
+require "zenweb/tasks"
 
 def extra_wirings
   # site  = $website
@@ -30,9 +28,5 @@ task :extra_wirings do
 end
 
 task :push do
-  sh "rsync -rv --del .site/ /Library/WebServer/Documents/"
-end
-
-task :beta => [:clean, :generate] do
-  sh "rsync -avz --del .site/ e:/Users/www/new.zenspider.com/"
+  sh "rsync -rv --del .site/ #{HTML_DIR}"
 end
