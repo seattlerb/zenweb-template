@@ -4,6 +4,7 @@ email: john.doe@example.com
 disqus_shortname: examplecom
 date_fmt: %Y/%m
 google_ua: UA-123456-7
+gauges_id: 0123456789abcdef10111213
 
 subtitle: example.com
 
