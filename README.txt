@@ -15,7 +15,7 @@ Simply provides an example zenweb template website.
 == SYNOPSIS:
 
   gem unpack zenweb-template
-  cd zenweb-template-1.0.0.b1/website
+  cd zenweb-template-*/website
   rake
 
 == REQUIREMENTS:
