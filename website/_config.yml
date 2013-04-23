@@ -2,7 +2,7 @@ domain: http://www.example.com
 author: John Doe
 email: john.doe@example.com
 disqus_shortname: examplecom
-date_fmt: %Y/%m
+date_fmt: "%Y/%m"
 google_ua: UA-123456-7
 gauges_id: 0123456789abcdef10111213
 
