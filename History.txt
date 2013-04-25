@@ -1,3 +1,9 @@
+=== 1.0.1 / 2013-04-25
+
+* 1 bug fix:
+
+  * Fixed YAML that works in syck but not psych.
+
 === 1.0.0 / 2012-11-09
 
 * 2 minor enhancements:
