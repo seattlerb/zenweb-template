@@ -1,5 +1,5 @@
 require "isolate"
 
-Isolate.now! :path => ".isolate", :system => false do
-  gem 'zenweb',   '~> 3.0.0.b1'
+Isolate.now! :path => ".isolate" do
+  gem "zenweb", "~> 3.7"
 end
