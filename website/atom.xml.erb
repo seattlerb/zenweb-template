@@ -8,7 +8,7 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   {%
-    posts = site.pages_by_date.first(rss_length)
+    posts = site.categories.blog.sort_by { |p| [-p.date.to_i, p.title] }.first(page.rss_length)
   %}
 
   <id>{{ domain }}/</id>

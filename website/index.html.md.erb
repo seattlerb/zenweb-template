@@ -3,8 +3,7 @@ title: Example Homepage
 layout: page
 ...
 
-{% pages  = all_subpages.select(&:dated_path?) %}
-{% latest = pages.shift %}
+{% latest = site.categories.blog.sort_by { |p| [-p.date.to_i, p.title] }.first %}
 
 ## {{ latest.link_html }}
 
