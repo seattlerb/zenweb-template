@@ -1,3 +1,10 @@
+=== 1.0.2 / 2015-12-15
+
+* 2 bug fixes:
+
+  * Updated zenweb dependency.
+  * Use site.categories.blog & better sorting for post lists.
+
 === 1.0.1 / 2013-04-25
 
 * 1 bug fix:
