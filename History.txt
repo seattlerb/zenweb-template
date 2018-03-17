@@ -1,3 +1,9 @@
+=== 1.0.3 / 2018-03-17
+
+* 1 bug fix:
+
+  * nil -> null in yaml front matter. (srbaker)
+
 === 1.0.2 / 2015-12-15
 
 * 2 bug fixes:
@@ -23,4 +29,3 @@
 * 1 major enhancement
 
   * Birthday!
-
